@@ -39,7 +39,7 @@ namespace DiffIntSizes
                 if (num >= 0 && num <= 4294967295)
                 {
                     Console.WriteLine("* uint");
-                //}
+                }
                 if (num >= -9223372036854775808 && num <= 9223372036854775807)
                 {
                     Console.WriteLine("* long");
