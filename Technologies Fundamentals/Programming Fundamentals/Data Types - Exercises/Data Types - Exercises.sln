@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintASCII", "PrintASCII\Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiffIntSizes", "DiffIntSizes\DiffIntSizes.csproj", "{87AB1122-82D1-4771-8C9B-B0C97CE8C25B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheaPhotos", "TheaPhotos\TheaPhotos.csproj", "{EF4190C4-E647-4FFF-900E-42E1FC3B0500}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{87AB1122-82D1-4771-8C9B-B0C97CE8C25B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87AB1122-82D1-4771-8C9B-B0C97CE8C25B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87AB1122-82D1-4771-8C9B-B0C97CE8C25B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF4190C4-E647-4FFF-900E-42E1FC3B0500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF4190C4-E647-4FFF-900E-42E1FC3B0500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF4190C4-E647-4FFF-900E-42E1FC3B0500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF4190C4-E647-4FFF-900E-42E1FC3B0500}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
