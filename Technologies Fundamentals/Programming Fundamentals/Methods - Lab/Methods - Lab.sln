@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlankReceipt", "BlankReceipt\BlankReceipt.csproj", "{601D978F-91B8-4656-9FA1-74950D3833A5}"
 EndProject
@@ -14,6 +14,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleArea", "TriangleArea\TriangleArea.csproj", "{75CCF4FB-77FA-4D47-9E52-CBE8B1EA2555}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathPower", "MathPower\MathPower.csproj", "{48AF2227-5071-467C-ADC8-DE1964F9A5D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreaterOfTwo", "GreaterOfTwo\GreaterOfTwo.csproj", "{7C814999-7A1B-4231-95EA-7666A0DFD4C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvenToOdds", "EvenToOdds\EvenToOdds.csproj", "{A3519864-F62A-4A84-857A-CDF74D541CC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriceChange", "PriceChange\PriceChange.csproj", "{7EEF2179-6851-49B8-8242-772729C1F01C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaysOff", "DaysOff\DaysOff.csproj", "{0F41F3D2-B6F8-45B8-91BC-CE2B353E0C5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +53,22 @@ Global
 		{48AF2227-5071-467C-ADC8-DE1964F9A5D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48AF2227-5071-467C-ADC8-DE1964F9A5D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48AF2227-5071-467C-ADC8-DE1964F9A5D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C814999-7A1B-4231-95EA-7666A0DFD4C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C814999-7A1B-4231-95EA-7666A0DFD4C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C814999-7A1B-4231-95EA-7666A0DFD4C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C814999-7A1B-4231-95EA-7666A0DFD4C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3519864-F62A-4A84-857A-CDF74D541CC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3519864-F62A-4A84-857A-CDF74D541CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3519864-F62A-4A84-857A-CDF74D541CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3519864-F62A-4A84-857A-CDF74D541CC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EEF2179-6851-49B8-8242-772729C1F01C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EEF2179-6851-49B8-8242-772729C1F01C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EEF2179-6851-49B8-8242-772729C1F01C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EEF2179-6851-49B8-8242-772729C1F01C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F41F3D2-B6F8-45B8-91BC-CE2B353E0C5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F41F3D2-B6F8-45B8-91BC-CE2B353E0C5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F41F3D2-B6F8-45B8-91BC-CE2B353E0C5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F41F3D2-B6F8-45B8-91BC-CE2B353E0C5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,11 +6,12 @@ namespace MathPower
     {
         public static double PowerOfNum(double number, int power)
         {
+            double result = 1;
             for (int i = 0; i < power; i++)
             {
-                number *= number;
+                result *= number;
             }
-            return number;
+            return result;
         }
 
         public static void Main()
