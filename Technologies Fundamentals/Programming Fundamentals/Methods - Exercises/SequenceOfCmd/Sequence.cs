@@ -28,13 +28,13 @@ namespace SequenceOfCmd
                     args[0] = int.Parse(line[1]);
                     args[1] = int.Parse(line[2]);
                     PerformAction(array, line[0], args);
-                    Console.WriteLine(String.Join(" ", array));
                 }
                 else
                 {
                     PerformAction(array, line[0]);
                 }
 
+                Console.WriteLine(String.Join(" ", array));
                 command = Console.ReadLine();
             }
         }
@@ -80,7 +80,10 @@ namespace SequenceOfCmd
                 rotatedArray[i] = array[i - 1];
             }
 
-            Console.WriteLine(String.Join(" ", rotatedArray));
+            for (int i = 0; i < rotatedArray.Length; i++)
+            {
+                array[i] = rotatedArray[i];
+            }
         }
 
         private static void ArrayShiftLeft(int[] array)
@@ -93,7 +96,10 @@ namespace SequenceOfCmd
                 rotatedArray[i] = array[i+1];
             }
 
-            Console.WriteLine(String.Join(" ", rotatedArray));
+            for (int i = 0; i < rotatedArray.Length; i++)
+            {
+                array[i] = rotatedArray[i];
+            }
         }
 
     }
