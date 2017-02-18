@@ -7,7 +7,7 @@ namespace LettersChangeNumber
     {
         public static void Main()
         {
-            var input = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToArray();
+            var input = Console.ReadLine().Split(new[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries).ToArray();
 
             double allSum = 0;
 
