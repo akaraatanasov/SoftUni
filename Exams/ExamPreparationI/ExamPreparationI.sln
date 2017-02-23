@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinoTheWalker", "SinoTheWalker\SinoTheWalker.csproj", "{28C02E90-A348-4CC2-AD87-B3E3F5F40830}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftUniKaraoke", "SoftUniKaraoke\SoftUniKaraoke.csproj", "{827C6C75-2C94-4858-B46A-1657AE11E0D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnduranceRally", "EnduranceRally\EnduranceRally.csproj", "{DD12B9CB-97C9-471C-9CE9-B31421E43F5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinningTicket", "WinningTicket\WinningTicket.csproj", "{A4EA438B-B4F1-4DC3-B7A5-51D33C195E58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28C02E90-A348-4CC2-AD87-B3E3F5F40830}.Debug|x86.ActiveCfg = Debug|x86
+		{28C02E90-A348-4CC2-AD87-B3E3F5F40830}.Debug|x86.Build.0 = Debug|x86
+		{28C02E90-A348-4CC2-AD87-B3E3F5F40830}.Release|x86.ActiveCfg = Release|x86
+		{28C02E90-A348-4CC2-AD87-B3E3F5F40830}.Release|x86.Build.0 = Release|x86
+		{827C6C75-2C94-4858-B46A-1657AE11E0D4}.Debug|x86.ActiveCfg = Debug|x86
+		{827C6C75-2C94-4858-B46A-1657AE11E0D4}.Debug|x86.Build.0 = Debug|x86
+		{827C6C75-2C94-4858-B46A-1657AE11E0D4}.Release|x86.ActiveCfg = Release|x86
+		{827C6C75-2C94-4858-B46A-1657AE11E0D4}.Release|x86.Build.0 = Release|x86
+		{DD12B9CB-97C9-471C-9CE9-B31421E43F5C}.Debug|x86.ActiveCfg = Debug|x86
+		{DD12B9CB-97C9-471C-9CE9-B31421E43F5C}.Debug|x86.Build.0 = Debug|x86
+		{DD12B9CB-97C9-471C-9CE9-B31421E43F5C}.Release|x86.ActiveCfg = Release|x86
+		{DD12B9CB-97C9-471C-9CE9-B31421E43F5C}.Release|x86.Build.0 = Release|x86
+		{A4EA438B-B4F1-4DC3-B7A5-51D33C195E58}.Debug|x86.ActiveCfg = Debug|x86
+		{A4EA438B-B4F1-4DC3-B7A5-51D33C195E58}.Debug|x86.Build.0 = Debug|x86
+		{A4EA438B-B4F1-4DC3-B7A5-51D33C195E58}.Release|x86.ActiveCfg = Release|x86
+		{A4EA438B-B4F1-4DC3-B7A5-51D33C195E58}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
