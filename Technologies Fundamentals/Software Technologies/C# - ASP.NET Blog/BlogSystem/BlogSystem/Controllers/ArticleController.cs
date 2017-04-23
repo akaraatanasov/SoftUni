@@ -2,6 +2,7 @@
 using Microsoft.AspNet.Identity;
 using System.Data.Entity;
 using System.Linq;
+using System.Web;
 using System.Web.Mvc;
 
 namespace BlogSystem.Controllers
@@ -29,7 +30,7 @@ namespace BlogSystem.Controllers
 
         [Authorize]
         [HttpPost]
-        public ActionResult Create(Article model)
+        public ActionResult Create(Article model, HttpPostedFileBase image)
         {
             if (ModelState.IsValid)
             {
@@ -38,6 +39,26 @@ namespace BlogSystem.Controllers
                     var authorId = this.User.Identity.GetUserId();
 
                     model.AuthorId = authorId;
+
+                    if (image != null)
+                    {
+                        var allowedContentTypes = new[] { "image/jpeg", "image/jpg", "image/png" };
+
+                        if (allowedContentTypes.Contains(image.ContentType))
+                        {
+                            var imagesPath = "/Content/Images/";
+
+                            var fileName = image.FileName;
+
+                            var uploadPath = imagesPath + fileName;
+
+                            var physicalPath = Server.MapPath(uploadPath);
+
+                            image.SaveAs(physicalPath);
+
+                            model.ImagePath = uploadPath;
+                        }
+                    }
 
                     db.Articles.Add(model);
                     db.SaveChanges();
@@ -127,6 +148,7 @@ namespace BlogSystem.Controllers
                     Id = article.Id,
                     Title = article.Title,
                     Content = article.Content,
+                    ImagePath = article.ImagePath,
                     AuthorId = article.AuthorId
                 };
 
@@ -136,7 +158,7 @@ namespace BlogSystem.Controllers
 
         [Authorize]
         [HttpPost]
-        public ActionResult Edit(ArticleViewModel model)
+        public ActionResult Edit(ArticleViewModel model, HttpPostedFileBase image)
         {
             if (ModelState.IsValid)
             {
@@ -151,6 +173,32 @@ namespace BlogSystem.Controllers
 
                     article.Title = model.Title;
                     article.Content = model.Content;
+
+                    if (image != null)
+                    {
+                        var allowedContentTypes = new[] { "image/jpeg", "image/jpg", "image/png" };
+
+                        if (allowedContentTypes.Contains(image.ContentType))
+                        {
+                            var imagesPath = "/Content/Images/";
+
+                            var fileName = image.FileName;
+
+                            var uploadPath = imagesPath + fileName;
+
+                            var physicalPath = Server.MapPath(uploadPath);
+
+                            image.SaveAs(physicalPath);
+
+                            model.ImagePath = uploadPath;
+
+                            article.ImagePath = model.ImagePath;
+                        }
+                    }
+                    else
+                    {
+                        article.ImagePath = null;
+                    }
 
                     db.SaveChanges();
                 }

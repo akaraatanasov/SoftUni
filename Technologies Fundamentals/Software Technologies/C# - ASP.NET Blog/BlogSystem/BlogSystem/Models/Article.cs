@@ -18,6 +18,8 @@ namespace BlogSystem.Models
         [Required]
         public string Content { get; set; }
 
+        public string ImagePath { get; set; }
+
         public string AuthorId { get; set; }
 
         public virtual ApplicationUser Author { get; set; }

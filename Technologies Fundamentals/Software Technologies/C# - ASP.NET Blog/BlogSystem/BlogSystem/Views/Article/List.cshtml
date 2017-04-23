@@ -18,6 +18,10 @@
                     <p>
                         @article.Content
                     </p>
+                    @if (!string.IsNullOrEmpty(article.ImagePath))
+                    {
+                        <img src="@article.ImagePath" alt="Article Image" height="300" />
+                    }
                     <footer class="pull-right">
                         <small class="author">
                             --author @article.Author.FullName
