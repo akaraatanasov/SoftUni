@@ -1,0 +1,74 @@
+﻿@model List<DopeZoo.Models.Sale>
+@using Microsoft.AspNet.Identity;
+
+@{
+    ViewBag.Title = "List";
+}
+
+<style>
+    .custom {
+        width: 107.75px !important;
+        height: 53px !important;
+    }
+</style>
+
+<header class="intro-header" style="background-image: url(@Url.Content("~/Content/img/shop.jpg"))">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Become a part of the zoo.</h1>
+                    <h2 class="subheading"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+
+
+    <ul class="pager">
+        <li>
+            <a href='@Url.Action("Create", "Shop")'> Create new sale post</a>
+        </li>
+    </ul>
+    <br /><br />
+
+    <div class="row">
+        @foreach (var sale in Model)
+        {
+            <div class="col-sm-6">
+                <article>
+                    <header>
+                        <h2>
+                            @sale.Title
+                        </h2>
+                        <h3>
+                            @sale.Price
+                        </h3>
+                        <h5>
+                            @sale.Author.Email
+                        </h5>
+                    </header>
+                    <p>
+                        @sale.Content
+                    </p>
+                    @if (!string.IsNullOrEmpty(sale.ImagePath))
+                    {
+                        <img src="@sale.ImagePath" alt="Article Image" height="300" />
+                        <br />
+                    }
+                    <footer class="pull-right">                     
+                        @if (User.Identity.IsAuthenticated && (User.IsInRole("Admin") || sale.IsAuthor(User.Identity.GetUserId())))
+                        {
+                            @Html.ActionLink("Edit", "Edit", "Shop", new { @id = sale.Id }, new { @class = "btn btn-success custom" })
+                            @Html.ActionLink("Delete", "Delete", "Shop", new { @id = sale.Id }, new { @class = "btn btn-danger btn-xs" })
+                        }
+                    </footer>
+                </article>
+            </div>
+        }
+    </div>
+
+</div>
